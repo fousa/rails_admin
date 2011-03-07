@@ -20,3 +20,5 @@ spec/dummy_app/log/*.log
 tmp/**/*
 /.emacs.desktop
 .idea/*.xml
+
+/passenger.3000.pid.lock
