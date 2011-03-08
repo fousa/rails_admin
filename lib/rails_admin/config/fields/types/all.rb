@@ -16,3 +16,5 @@ require 'rails_admin/config/fields/types/text'
 require 'rails_admin/config/fields/types/time'
 require 'rails_admin/config/fields/types/timestamp'
 require 'rails_admin/config/fields/types/virtual'
+require "rails_admin/config/fields/types/carrier_wave_file"
+require "rails_admin/config/fields/types/carrier_wave_image"
