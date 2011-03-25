@@ -5,7 +5,11 @@ if defined?(::CarrierWave)
       RailsAdmin::Config::Fields::Types.register(self)
       register_instance_option(:formatted_value) do
         unless value.blank?
-          "<a href='#{value}'}>#{value.to_s.split("/").last}</a>".html_safe
+					if value.tiny
+						"<a href='#{value}'}><img src='#{value.tiny.url}' /></a><a href='#{value}'}>#{value.to_s.split("/").last}</a>".html_safe
+					else
+						"<a href='#{value}'}>#{value.to_s.split("/").last}</a>".html_safe
+					end
         else
           ""
         end
