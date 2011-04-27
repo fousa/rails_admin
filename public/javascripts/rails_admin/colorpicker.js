@@ -19,8 +19,7 @@ Control.ColorPicker.prototype = {
   initialize : function(field, options) {
     var colorPicker = this;
     Control.colorPickers.push(colorPicker);
-    this.field = field
-    console.log(this.field)
+    this.field = field;
     this.fieldName = this.field.name || this.field.id;
     this.options = Object.extend({
        IMAGE_BASE : "img/"
