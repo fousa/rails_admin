@@ -25,7 +25,6 @@
     dateFormat: 'yyyy-MM-dd'}
 
   document.observe("dom:loaded", function() {
-    alert("DOM LOADED");
     $$(".field .date").each(function(elem){
       new Control.DatePicker(elem, {icon: '<%= image_tag "rails_admin/calendar.png" %>'});
     });
@@ -39,7 +38,6 @@
       new Control.DatePicker(elem, {icon: '<%= image_tag "rails_admin/calendar.png" %>', timePicker: true, timePickerAdjacent: true});
     });
     $$("input[id$='_color']").each(function(elem){
-        alert("Color input");
         new Control.ColorPicker(elem, { IMAGE_BASE : "/images/rails_admin/colorpicker/" });
     });
 
